@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Pomodoro Clock</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class='clock'>
+        <div class="top"><h1>Pomodoro Clock</h1></div>
+        <div class="timer-lengths-controls">
+            <div>
+                <div id="session-label" class="label">Session Length: <span id='session-length'>25</span></div>
+                <div class="length-buttons">
+                    <div><button id="session-decrement" class="session-btn" value="-1">-</button></div>
+                    <div><button id="session-increment" class="session-btn" value="1">+</button></div>
+                </div>
+            </div>
+            <div>
+                <div id="break-label" class="label">Break Length: <span id='break-length'>5</span></div>
+                <div class="length-buttons">
+                    <div><button id="break-decrement" class="break-btn" value="-1">-</button></div>
+                    <div><button id="break-increment" class="break-btn" value="1">+</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="main-controls">
+                <div><button id="start_stop" class="main-btn">Start</button></div>
+                <div><button id="reset" class="main-btn">Reset</button></div>
+            </div>
+            <div class="timer">
+                <div id="timer-label">Session</div>
+                <div id="time-left" class="time">25:00</div>
+            </div>
+        </div>
+    </div>
+    <audio id="beep" src="http://www.peter-weinberg.com/files/1014/8073/6015/BeepSound.wav" />
+    <script src="js/index.js"></script>
+    <script src="../../utils.js"></script>
+</body>
+</html>

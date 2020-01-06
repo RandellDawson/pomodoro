@@ -1,0 +1,127 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    font-family: 'New Courier', sans-serif;
+    height: 100vh;
+    text-align: center;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+.top, .bottom {
+    padding: 5px;
+}
+
+.bottom {
+    padding-top: 10px;
+}
+
+body:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+button {
+    outline: none;
+    cursor: pointer;
+}
+
+.timer-length-controls {
+    font-size: 20px;
+    border:
+}
+
+.clock {
+    background-color: #c9daf8;
+    width: 250px;
+    border-radius: 25px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.time, #timer-label {
+    font-family: 'New Courier', sans-serif;
+    font-size: 30px;
+}
+
+.timer-lengths-controls {
+    border-left: 1px solid #c9daf8;
+    border-right: 1px solid #c9daf8;
+    background: white;
+    overflow: hidden;
+    padding: 5px;
+    transition: height .5s ease-out;
+}
+
+.timer-lengths-controls>div {
+    display: flex;
+    align-content: center;
+}
+
+.label {
+    font-size: 18px;
+    flex: 3;
+    align-self: flex-start;
+    text-align: left;
+}
+
+.length-buttons {
+    display: flex;
+    flex: 1;
+    align-content: space-around;
+}
+
+.length-buttons>div {
+    flex-grow: 1;
+}
+
+.length-buttons button {
+    background: #c9daf8;
+    color: black;
+    border-radius: 5px;
+    border: 1px solid #666666;
+    width: 20px;
+}
+
+.time {
+    margin: 0;
+    font-family: 'Courier', sans-serif;
+    font-weight: bold;
+}
+
+.timer {
+    margin: 5px;
+    padding: 5px;
+}
+
+.main-controls {
+    display: flex;
+    align-content: center;
+}
+
+.main-controls>div {
+    flex: 1;
+}
+
+.main-btn {
+    padding: 5px;
+    width: 70px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: black;
+    background: #cfe2f3;
+}
+
+.main-btn:hover {
+    background: #cccccc;
+}
